@@ -8,5 +8,8 @@ namespace ManualDHCP
 {
     class IO_Control
     {
+        private DBC _dbc = new DBC();
+        private Form_Anzeige _fa = new Form_Anzeige();
+        private DHCP _dhcp = new DHCP();
     }
 }
