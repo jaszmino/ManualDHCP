@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ManualDHCP
 {
-    public partial class Form1 : Form
+    public partial class Form_NeuesNetz : Form
     {
-        public Form1()
+        public Form_NeuesNetz()
         {
             InitializeComponent();
         }
