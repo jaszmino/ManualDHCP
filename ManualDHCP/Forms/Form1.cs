@@ -36,8 +36,9 @@ namespace ManualDHCP
                 {
                     _dbIP = tb_IP.Text;
                     _dbPort = tb_port.Text;
-                    Form_Anzeige _fa = new Form_Anzeige();
-                    _fa.ShowDialog();
+                    this.Hide();
+                    Form_Anzeige fa = new Form_Anzeige();
+                    fa.ShowDialog();
                 }
                 else
                 {
@@ -51,7 +52,7 @@ namespace ManualDHCP
         }
         private void bt_abort_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }

@@ -16,24 +16,24 @@ namespace ManualDHCP
         {
             InitializeComponent();
         }
-
         private void bt_save_Click(object sender, EventArgs e)
         {
 
         }
-
         private void bt_refresh_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Form_Anzeige fa = new Form_Anzeige();
+            fa.ShowDialog();
         }
-
         private void bt_new_Click(object sender, EventArgs e)
         {
-
+            Form_NeuesNetz fn = new Form_NeuesNetz();
+            fn.ShowDialog();
         }
         private void bt_abort_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }
